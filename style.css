@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing:border-box;
+}
+
+.container{
+    width: 100%;
+    min-height:100vh;
+    background-color:black;
+    padding: 10px;
+}
+.todo-app{
+    width:600px;
+    max-height: fit-content;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 7px;
+}
+.heading{
+    margin-bottom:10px;
+    display: flex;
+    align-items: center;
+}
+.inputdiv{
+    width:450px;
+    height: 42px;
+    margin-top:20px;
+    margin-left: 35px;
+    margin-right: 0px;
+    background-color: black;
+    border-radius: 20px;
+}
+#inputtask{
+    width:370px;
+    height: 42px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20px;
+}
+#addtask{
+    margin-left: 0%;
+    margin-right: 0px;
+    width:70px;
+    height:37px;
+    border-radius: 20px;
+    cursor:grabbing;
+}
+
+#tasktobedone{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+ul li{
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 19px;
+    padding-top: 12px;
+    position: relative;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
